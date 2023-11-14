@@ -132,7 +132,7 @@ main {
     background-color: #daf1ff;       
 }
 
-h2 {
+h1 {
     background-color: #9ce1fe;
     font-family: 'Croisant';    
     text-align: center;
@@ -140,7 +140,7 @@ h2 {
 
 /*MAIN - index*/
 
-#seccion-centrada {
+.seccion-centrada-index {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -222,7 +222,16 @@ h2 {
     justify-content: center;
 }
 .card {
-    width: 20rem;
+    width: 18rem;
+    margin: 1%;
+}
+.card a{
+    color: #9ce1fe;
+}
+
+.btn-primary {
+    font-family: 'Bree';
+    
 }
 
 /*INDEX - SERVICIOS*/
@@ -235,7 +244,7 @@ h2 {
 }
 
 .seccion-centrada p {
-    width: 100%;
+    width: 70%;
     text-align: center;
 }
 .seccion-centrada img {
@@ -668,7 +677,7 @@ h5 {
         width: 35px;
     }
     
-    #seccion-centrada {
+    .seccion-centrada-index {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
@@ -834,10 +843,10 @@ h5 {
     .imagen-index {
         height: 100%;
     }
-    #seccion-centrada {
+    .seccion-centrada-index {
         font-size: small;
     }
-    #seccion-centrada p {
+    .seccion-centrada-index p {
         width: 90%;
     }
     .mapa-1 {
