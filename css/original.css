@@ -50,7 +50,7 @@ body {
 .menu ul li a {
     text-decoration: none;
     font-size: large;
-    color: black;
+    color: #000000;
     font-family: 'Croisant';
     padding: 10px;
 }
@@ -83,7 +83,7 @@ body {
 
 .nav li a {
     background-color: #53acd2bc;
-    color: aliceblue;
+    color: #f0f8ff;
     text-decoration: none;
     padding: 10px 15px;
     display: block;
@@ -91,7 +91,7 @@ body {
 }
 
 .nav li a:hover {
-    background-color: grey;
+    background-color: #808080;
 }
 
 .nav > li {
@@ -145,9 +145,8 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "articulo1  articulo2   articulo3"
-    ;
-    }
+    "articulo1  articulo2   articulo3";
+}
     #articulo-1 {
         grid-area: articulo1;
     }
@@ -467,7 +466,7 @@ div p {
     font-weight: 600;
     font-size: medium;
     font-family: 'Bree';
-    color: rgb(69, 69, 69);
+    color: #454545;
 }
 
 .telefono {
@@ -591,7 +590,7 @@ h5 {
     align-items: center;
     font-family: 'bree';
     font-size: medium;
-    color: rgb(69, 69, 69);
+    color: #454545;
     flex-direction: column;
     
 }

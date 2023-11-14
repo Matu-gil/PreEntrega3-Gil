@@ -1,0 +1,27 @@
+.seccion-centrada-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "articulo1  articulo2   articulo3";
+}
+
+.grid-conteiner {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: 
+    "seccion1   mapa1"
+    "seccion2   mapa2"
+    "seccion3   mapa3";
+}
+
+.footer {
+    background-image: url(../imagenes/13844-NPB8WE.jpg);
+    background-size:cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 420px ;
+    grid-template-areas: 
+    "info  redes horarios sucursales";
+}
