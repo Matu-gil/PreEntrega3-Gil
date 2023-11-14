@@ -1,0 +1,178 @@
+.footer {
+    background-image: url(../imagenes/13844-NPB8WE.jpg);
+    background-size:cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 420px ;
+    grid-template-areas: 
+    "info  redes horarios sucursales";
+
+    .logo_footer{
+        grid-area: info;
+        display: inline-block;
+        width: 300px;
+        height: 250px;
+        margin: 1%;
+        
+        .logo {
+        border-radius: 50%;
+        width: 200px;
+        margin: 1%;
+        }
+        .datos-pagina {
+            display: flex;
+            width: 250px;
+            
+            img {
+                margin: 1%;
+            }
+            p {
+                display: inline-block;
+                margin: 1.5% 0px 0px 0px;
+                font-weight: 600;
+                font-size: medium;
+                font-family: 'Bree';
+                color: rgb(69, 69, 69);
+            }
+            .ubicacion {
+                width: 40px;
+                border-radius: 50%;
+            }
+            .telefono {
+                width: 40px;
+                border-radius: 50%;
+            }
+            .mail {
+                width: 40px;
+                border-radius: 40%;
+            }
+        }
+    }
+    .redessociales {
+        grid-area: redes;
+        flex-direction: column;
+        width: 100px;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+        
+        h4 {
+            font-family: 'Croisant';
+            width: 77%;
+            margin: 1%;
+            text-align: center;
+            display: flex;
+            
+        }
+
+        .redes {
+            display: flex;
+            flex-direction: column;
+            
+            #facebook {
+                display: flex;
+                flex-direction: column;
+                width: 60px;
+                border-radius: 50%;
+                margin: 10px 0px;
+                
+                img {
+                    width: 60px;
+                }
+                
+                a {
+                    display: inline-block;
+                    width: 80px;
+                }
+            }
+            #instagram {
+                display: flex;
+                flex-direction: column;
+                width: 60px;
+                border-radius: 50%;
+                margin: 10px 0px;
+                
+                img {
+                    width: 60px;
+                }
+                
+                a {
+                    display: inline-block;
+                    width: 80px;
+                }
+            }
+            #telegram {
+                display: flex;
+                flex-direction: column;
+                width: 60px;
+                border-radius: 50%;
+                margin: 10px 0px;
+                
+                img {
+                    width: 60px;
+                }
+                
+                a {
+                    display: inline-block;
+                    width: 80px;
+                }
+            }
+        }
+    }
+    .horarios-servicios {
+        grid-area: horarios;
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        padding-top: 30px;
+        
+        .diasyhorarios-servicios {
+            text-align: center;
+            font-family: 'Bree';
+            font-size: large;
+        }
+        
+        .horarios-de-atencion-servicios {
+            display: flex;
+            width: 100%;
+            height: 8%;
+            justify-content: center;
+        }
+    }
+    .sucursales-map-servicios {
+        grid-area: sucursales;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+        h5 {
+            display: flex;
+            width: 100%;
+            justify-content: center; 
+            font-size: medium;
+            text-align: center;
+        }
+        
+        .map {
+            margin: 20px 0px;
+            
+            iframe {
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+    
+    
+
+
+
