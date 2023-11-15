@@ -3,47 +3,40 @@
 /*MOBILE*/
 @media (min-width: 320px) and (max-width: 480px) {
     
-    .footer {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 360px 190px 240px;
-        grid-template-areas: 
-        "info"  
-        "redes" 
-        "horarios" 
-        "sucursales";
-    }
-
-    #menu-desplegable {
-        width: 100%;
-        margin: 0;
-    }
-
-    .buscador {
-        width: 100%;
-        margin: 0;
-        justify-content: left;
-    }
     .header{
         height: 100%;
         width: 100%;
-    }
-    .logo-y-titulo img {
-        width: 100%;
-        margin: 0;
-    }
-    .menu ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .buscar {
-        width: 285px;
-    }
-    .boton {
-        width: 35px;
-    }
-    
+        
+        .logo-y-titulo img {
+            width: 100%;
+            margin: 0;
+        }
+        .menu {
+        
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+        }
+        #menu-desplegable {
+            width: 100%;
+            margin: 0;
+        }
+        .buscador {
+            width: 100%;
+            margin: 0;
+            justify-content: left;
+            
+            .buscar {
+                width: 285px;
+            }
+            .boton {
+                width: 35px;
+            }
+        }
+    }       
     .seccion-centrada-index {
         display: grid;
         grid-template-columns: 1fr;
@@ -53,70 +46,92 @@
         "articulo2"   
         "articulo3";
     }
-    .seccion-centrada p {
+
+    .seccion-centrada {
+        
+        p {
         width: 90%;
         text-align: justify;
+        }
     }
-    .seccion-centrada strong p {
-        width: 100%;
-    }
-    #marcas button {
-        width: 55px;
-        font-size: xx-small;
-        height: 25px;
-
-    }
+    
     #marcas {
         margin: 0;
         width: 100%;
         margin: 20px 0px;
-    }    
+        
+        button {
+            width: 55px;
+            font-size: xx-small;
+            height: 25px;
+        }
+    }
+
     .main-index {
         height: 100%;
-    }
-    .horarios-servicios {
-        width: 100%;
-    }
-    .sucursales-map-servicios {
-        width: 100%;
-    }
-    .video iframe {
-        width: 95%;
-        margin: 18px 0px;
-        height: 224px;
-    }
-    .footer {
-        height: 65em;
-    }
-    #articulo-1 p {
-        width: 90%;
-        text-align: justify;
-    }
-    #articulo-2 p {
-        width: 90%;
-        text-align: justify;
-    }
-    #articulo-3 p {
-        width: 90%;
-        text-align: justify;
+        
+        .seccion-centrada-index {
+          
+            #articulo-1 {
+                p {
+                    width: 90%;
+                    text-align: justify;
+                }
+            }
+            #articulo-2 {
+                p {
+                    width: 90%;
+                    text-align: justify;
+                }
+            }
+            #articulo-3 {
+                p {
+                    width: 90%;
+                    text-align: justify;
+                }
+            }
+        }
+        .video {
+            
+            iframe {
+            width: 95%;
+            margin: 18px 0px;
+            height: 224px;
+            }
+        }
+        .card-body p {
+            font-size: x-small;
+        }
     }
     .main {
         height: 100%;
+        
+        .seccion-centrada {
+        
+            p {
+                text-align: justify;
+            }
+        }
     }
+    
     .main-contactos {
         height: 20em;
+        
+        .formulario-contacto {
+            width: 100%;
+            
+            ul {
+                padding: 0;
+                width: 100%;
+                text-align: center;
+                
+                .button {
+                    text-align: center;
+                }
+            }
+        }
     }
-    .formulario-contacto {
-        width: 100%;
-    }
-    .formulario-contacto ul {
-        padding: 0;
-        width: 100%;
-        text-align: center;
-    }
-    .button {
-        text-align: center;
-    }
+    
     #imagen-1 {
         width: 80%;
     }
@@ -126,15 +141,19 @@
     #imagen-3 {
         width: 100%;
     }
-    .top-10 ol {
-        padding: 17px;
+    .top-10 {
+        
+        ol {
+            padding: 17px;
+
+            li {
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
-    .seccion-centrada p {
-        text-align: justify;
-    }
-    .top-10 ol li img {
-        width: 100%;
-    }
+    
     .grid-conteiner {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -145,38 +164,57 @@
         "mapa2"
         "seccion3"   
         "mapa3";
+
+        .mapa-1 {
+            width: 100%;
+            justify-content: center;
+            
+            iframe {
+                width: 80%;    
+            }
+        }
+        .mapa-2 {
+            width: 100%;
+            justify-content: center;
+
+            iframe {
+                width: 80%;    
+            }
+        }
+        .mapa-3 {
+            width: 100%;
+            margin-bottom: 30px;
+            justify-content: center;
+
+            iframe {
+                width: 80%;    
+            }
+        }
+
     }
-    .mapa-1 {
-        width: 100%;
-        justify-content: center;
-    }
-    .mapa-1 iframe {
-        width: 80%;    
-    }
-    .mapa-2 {
-        width: 100%;
-        justify-content: center;
-    }
-    .mapa-2 iframe {
-        width: 80%;    
-    }
-    .mapa-3 {
-         width: 100%;
-        margin-bottom: 30px;
-        justify-content: center;
-    }
-    .mapa-3 iframe {
-        width: 80%;    
-    }
-    .logo_footer {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-    }
-    .card-body p {
-        font-size: x-small;
+    .footer {
+        height: 65em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 360px 190px 240px;
+        grid-template-areas: 
+        "info"  
+        "redes" 
+        "horarios" 
+        "sucursales";
+
+        .logo_footer {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+        .horarios-servicios {
+            width: 100%;
+        }
+        .sucursales-map-servicios {
+            width: 100%;
+        }
     }
 }
 /*TABLET*/

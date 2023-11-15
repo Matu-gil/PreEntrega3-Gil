@@ -12,15 +12,6 @@
   grid-template-areas: "seccion1   mapa1" "seccion2   mapa2" "seccion3   mapa3";
 }
 
-.footer {
-  background-image: url(../imagenes/13844-NPB8WE.jpg);
-  background-size: cover;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 420px;
-  grid-template-areas: "info  redes horarios sucursales";
-}
-
 .header {
   background-image: url(../imagenes/preview.jpg);
   background-size: cover;
@@ -265,38 +256,33 @@
 /*Media Queries - Max width*/
 /*MOBILE*/
 @media (min-width: 320px) and (max-width: 480px) {
-  .footer {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 360px 190px 240px;
-    grid-template-areas: "info" "redes" "horarios" "sucursales";
-  }
-  #menu-desplegable {
-    width: 100%;
-    margin: 0;
-  }
-  .buscador {
-    width: 100%;
-    margin: 0;
-    justify-content: left;
-  }
   .header {
     height: 100%;
     width: 100%;
   }
-  .logo-y-titulo img {
+  .header .logo-y-titulo img {
     width: 100%;
     margin: 0;
   }
-  .menu ul {
+  .header .menu ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  .buscar {
+  .header #menu-desplegable {
+    width: 100%;
+    margin: 0;
+  }
+  .header .buscador {
+    width: 100%;
+    margin: 0;
+    justify-content: left;
+  }
+  .header .buscador .buscar {
     width: 285px;
   }
-  .boton {
+  .header .buscador .boton {
     width: 35px;
   }
   .seccion-centrada-index {
@@ -309,63 +295,57 @@
     width: 90%;
     text-align: justify;
   }
-  .seccion-centrada strong p {
+  #marcas {
+    margin: 0;
     width: 100%;
+    margin: 20px 0px;
   }
   #marcas button {
     width: 55px;
     font-size: xx-small;
     height: 25px;
   }
-  #marcas {
-    margin: 0;
-    width: 100%;
-    margin: 20px 0px;
-  }
   .main-index {
     height: 100%;
   }
-  .horarios-servicios {
-    width: 100%;
+  .main-index .seccion-centrada-index #articulo-1 p {
+    width: 90%;
+    text-align: justify;
   }
-  .sucursales-map-servicios {
-    width: 100%;
+  .main-index .seccion-centrada-index #articulo-2 p {
+    width: 90%;
+    text-align: justify;
   }
-  .video iframe {
+  .main-index .seccion-centrada-index #articulo-3 p {
+    width: 90%;
+    text-align: justify;
+  }
+  .main-index .video iframe {
     width: 95%;
     margin: 18px 0px;
     height: 224px;
   }
-  .footer {
-    height: 65em;
-  }
-  #articulo-1 p {
-    width: 90%;
-    text-align: justify;
-  }
-  #articulo-2 p {
-    width: 90%;
-    text-align: justify;
-  }
-  #articulo-3 p {
-    width: 90%;
-    text-align: justify;
+  .main-index .card-body p {
+    font-size: x-small;
   }
   .main {
     height: 100%;
   }
+  .main .seccion-centrada p {
+    text-align: justify;
+  }
   .main-contactos {
     height: 20em;
   }
-  .formulario-contacto {
+  .main-contactos .formulario-contacto {
     width: 100%;
   }
-  .formulario-contacto ul {
+  .main-contactos .formulario-contacto ul {
     padding: 0;
     width: 100%;
     text-align: center;
   }
-  .button {
+  .main-contactos .formulario-contacto ul .button {
     text-align: center;
   }
   #imagen-1 {
@@ -380,9 +360,6 @@
   .top-10 ol {
     padding: 17px;
   }
-  .seccion-centrada p {
-    text-align: justify;
-  }
   .top-10 ol li img {
     width: 100%;
   }
@@ -391,37 +368,46 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "seccion1" "mapa1" "seccion2" "mapa2" "seccion3" "mapa3";
   }
-  .mapa-1 {
+  .grid-conteiner .mapa-1 {
     width: 100%;
     justify-content: center;
   }
-  .mapa-1 iframe {
+  .grid-conteiner .mapa-1 iframe {
     width: 80%;
   }
-  .mapa-2 {
+  .grid-conteiner .mapa-2 {
     width: 100%;
     justify-content: center;
   }
-  .mapa-2 iframe {
+  .grid-conteiner .mapa-2 iframe {
     width: 80%;
   }
-  .mapa-3 {
+  .grid-conteiner .mapa-3 {
     width: 100%;
     margin-bottom: 30px;
     justify-content: center;
   }
-  .mapa-3 iframe {
+  .grid-conteiner .mapa-3 iframe {
     width: 80%;
   }
-  .logo_footer {
+  .footer {
+    height: 65em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 360px 190px 240px;
+    grid-template-areas: "info" "redes" "horarios" "sucursales";
+  }
+  .footer .logo_footer {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
     margin: 0;
   }
-  .card-body p {
-    font-size: x-small;
+  .footer .horarios-servicios {
+    width: 100%;
+  }
+  .footer .sucursales-map-servicios {
+    width: 100%;
   }
 }
 /*TABLET*/

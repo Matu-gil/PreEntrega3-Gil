@@ -15,13 +15,3 @@
     "seccion2   mapa2"
     "seccion3   mapa3";
 }
-
-.footer {
-    background-image: url(../imagenes/13844-NPB8WE.jpg);
-    background-size:cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 420px ;
-    grid-template-areas: 
-    "info  redes horarios sucursales";
-}
