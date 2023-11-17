@@ -47,7 +47,7 @@
     .redessociales {
         @include flex-align-direction;
         grid-area: redes;
-        width: 100px;
+        width: $width-total;
         justify-self: center;
         padding-top: 30px;
         
@@ -113,7 +113,7 @@
     .horarios-servicios {
         grid-area: horarios;
         @include flex-direction;
-        width: 100%;
+        width: $width-total;
         padding-top: 30px;
         
         .diasyhorarios-servicios {
@@ -130,11 +130,11 @@
     .sucursales-map-servicios {
         grid-area: sucursales;
         @include flex-align-direction;
-        width: 100%;
+        width: $width-total;
         
         h5 {
             @include flex-just;
-            width: 100%; 
+            width: $width-total; 
             font-size: medium;
             text-align: center;
         }

@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "bree";
+  src: url(../fuentes/Bree_Serif/BreeSerif-Regular.ttf);
+  font-family: "Merriweather";
+  src: url(../fuentes/Merriweather/Merriweather-Regular.ttf);
+  font-family: "Serif";
+  src: url(../fuentes/PT_Serif_Caption/PTSerifCaption-Italic.ttf);
+  font-family: "Croisant";
+  src: url(../fuentes/CroissantOne-Regular.ttf);
+}
 .seccion-centrada-index {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -34,156 +44,6 @@
 .mi-bg {
   background-color: #a5ceff;
   margin: 3% 0px;
-}
-
-.footer {
-  background-image: url(../imagenes/13844-NPB8WE.jpg);
-  background-size: cover;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 420px;
-  grid-template-areas: "info  redes horarios sucursales";
-}
-.footer .logo_footer {
-  grid-area: info;
-  display: inline-block;
-  width: 300px;
-  height: 250px;
-  margin: 1%;
-}
-.footer .logo_footer .logo {
-  border-radius: 50%;
-  width: 200px;
-  margin: 1%;
-}
-.footer .logo_footer .datos-pagina {
-  display: flex;
-  width: 250px;
-}
-.footer .logo_footer .datos-pagina img {
-  margin: 1%;
-}
-.footer .logo_footer .datos-pagina p {
-  display: inline-block;
-  margin: 1.5% 0px 0px 0px;
-  font-weight: 600;
-  font-size: medium;
-  font-family: "Bree";
-  color: rgb(69, 69, 69);
-}
-.footer .logo_footer .datos-pagina .ubicacion {
-  width: 40px;
-  border-radius: 50%;
-}
-.footer .logo_footer .datos-pagina .telefono {
-  width: 40px;
-  border-radius: 50%;
-}
-.footer .logo_footer .datos-pagina .mail {
-  width: 40px;
-  border-radius: 40%;
-}
-.footer .redessociales {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  grid-area: redes;
-  width: 100px;
-  justify-self: center;
-  padding-top: 30px;
-}
-.footer .redessociales h4 {
-  font-family: "Croisant";
-  width: 77%;
-  margin: 1%;
-  text-align: center;
-  display: flex;
-}
-.footer .redessociales .redes {
-  display: flex;
-  flex-direction: column;
-}
-.footer .redessociales .redes #facebook {
-  display: flex;
-  flex-direction: column;
-  width: 60px;
-  border-radius: 50%;
-  margin: 10px 0px;
-}
-.footer .redessociales .redes #facebook img {
-  width: 60px;
-}
-.footer .redessociales .redes #facebook a {
-  display: inline-block;
-  width: 80px;
-}
-.footer .redessociales .redes #instagram {
-  display: flex;
-  flex-direction: column;
-  width: 60px;
-  border-radius: 50%;
-  margin: 10px 0px;
-}
-.footer .redessociales .redes #instagram img {
-  width: 60px;
-}
-.footer .redessociales .redes #instagram a {
-  display: inline-block;
-  width: 80px;
-}
-.footer .redessociales .redes #telegram {
-  display: flex;
-  flex-direction: column;
-  width: 60px;
-  border-radius: 50%;
-  margin: 10px 0px;
-}
-.footer .redessociales .redes #telegram img {
-  width: 60px;
-}
-.footer .redessociales .redes #telegram a {
-  display: inline-block;
-  width: 80px;
-}
-.footer .horarios-servicios {
-  grid-area: horarios;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 30px;
-}
-.footer .horarios-servicios .diasyhorarios-servicios {
-  text-align: center;
-  font-family: "Bree";
-  font-size: large;
-}
-.footer .horarios-servicios .horarios-de-atencion-servicios {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 8%;
-}
-.footer .sucursales-map-servicios {
-  grid-area: sucursales;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-.footer .sucursales-map-servicios h5 {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  font-size: medium;
-  text-align: center;
-}
-.footer .sucursales-map-servicios .map {
-  margin: 20px 0px;
-}
-.footer .sucursales-map-servicios .map iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
 }
 
 main {
@@ -421,6 +281,156 @@ h1 {
 }
 #articulo-lo-que-debes-saber .top-10 ol li img {
   width: 50%;
+}
+
+.footer {
+  background-image: url(../imagenes/13844-NPB8WE.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 420px;
+  grid-template-areas: "info  redes horarios sucursales";
+}
+.footer .logo_footer {
+  grid-area: info;
+  display: inline-block;
+  width: 300px;
+  height: 250px;
+  margin: 1%;
+}
+.footer .logo_footer .logo {
+  border-radius: 50%;
+  width: 200px;
+  margin: 1%;
+}
+.footer .logo_footer .datos-pagina {
+  display: flex;
+  width: 250px;
+}
+.footer .logo_footer .datos-pagina img {
+  margin: 1%;
+}
+.footer .logo_footer .datos-pagina p {
+  display: inline-block;
+  margin: 1.5% 0px 0px 0px;
+  font-weight: 600;
+  font-size: medium;
+  font-family: "Bree";
+  color: rgb(69, 69, 69);
+}
+.footer .logo_footer .datos-pagina .ubicacion {
+  width: 40px;
+  border-radius: 50%;
+}
+.footer .logo_footer .datos-pagina .telefono {
+  width: 40px;
+  border-radius: 50%;
+}
+.footer .logo_footer .datos-pagina .mail {
+  width: 40px;
+  border-radius: 40%;
+}
+.footer .redessociales {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-area: redes;
+  width: 100%;
+  justify-self: center;
+  padding-top: 30px;
+}
+.footer .redessociales h4 {
+  font-family: "Croisant";
+  width: 77%;
+  margin: 1%;
+  text-align: center;
+  display: flex;
+}
+.footer .redessociales .redes {
+  display: flex;
+  flex-direction: column;
+}
+.footer .redessociales .redes #facebook {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  border-radius: 50%;
+  margin: 10px 0px;
+}
+.footer .redessociales .redes #facebook img {
+  width: 60px;
+}
+.footer .redessociales .redes #facebook a {
+  display: inline-block;
+  width: 80px;
+}
+.footer .redessociales .redes #instagram {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  border-radius: 50%;
+  margin: 10px 0px;
+}
+.footer .redessociales .redes #instagram img {
+  width: 60px;
+}
+.footer .redessociales .redes #instagram a {
+  display: inline-block;
+  width: 80px;
+}
+.footer .redessociales .redes #telegram {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  border-radius: 50%;
+  margin: 10px 0px;
+}
+.footer .redessociales .redes #telegram img {
+  width: 60px;
+}
+.footer .redessociales .redes #telegram a {
+  display: inline-block;
+  width: 80px;
+}
+.footer .horarios-servicios {
+  grid-area: horarios;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 30px;
+}
+.footer .horarios-servicios .diasyhorarios-servicios {
+  text-align: center;
+  font-family: "Bree";
+  font-size: large;
+}
+.footer .horarios-servicios .horarios-de-atencion-servicios {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 8%;
+}
+.footer .sucursales-map-servicios {
+  grid-area: sucursales;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.footer .sucursales-map-servicios h5 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: medium;
+  text-align: center;
+}
+.footer .sucursales-map-servicios .map {
+  margin: 20px 0px;
+}
+.footer .sucursales-map-servicios .map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /*Media Queries - Max width*/

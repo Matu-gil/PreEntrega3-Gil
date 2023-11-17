@@ -174,7 +174,7 @@ h1 {
 
     .enviar {
     @include flex-just;
-    width: 100%;
+    width: $width-total;
 
         button {
         font-family: 'Merriweather';

@@ -3,12 +3,12 @@
     background-size:cover;
     background-position: center;
     @include flex-direction;
-    height: 100%;
+    height: $heith-total;
 }
 
 .logo-y-titulo {
     @include flex-just;
-    width: 100%;
+    width: $width-total;
     
     img {
         border-radius: 100%;

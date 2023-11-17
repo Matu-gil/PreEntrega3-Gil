@@ -7,22 +7,22 @@
         @include w-h (100%, 100%);
         
         .logo-y-titulo img {
-            width: 100%;
+            width: $width-total;
             margin: 0;
         }
         .menu {
         
             ul {
                 @include flex-align-direction;
-                width: 100%;
+                width: $width-total;
             }
         }
         #menu-desplegable {
-            width: 100%;
+            width: $width-total;
             margin: 0;
         }
         .buscador {
-            width: 100%;
+            width: $width-total;
             margin: 0;
             justify-content: left;
             
@@ -54,7 +54,7 @@
     
     #marcas {
         margin: 0;
-        width: 100%;
+        width: $width-total;
         margin: 20px 0px;
         
         button {
@@ -64,7 +64,7 @@
     }
 
     .main-index {
-        height: 100%;
+        height: $heith-total;
         
         .seccion-centrada-index {
           
@@ -96,7 +96,7 @@
         }
     }
     .main {
-        height: 100%;
+        height: $heith-total;
         
         .seccion-centrada {
         
@@ -110,7 +110,7 @@
         height: 20em;
         
         .formulario-contacto {
-            width: 100%;
+            width: $width-total;
             
             ul {
                 padding: 0;
@@ -130,7 +130,7 @@
         width: 80%;
     }
     #imagen-3 {
-        width: 100%;
+        width: $width-total;
     }
     .top-10 {
         
@@ -192,14 +192,14 @@
 
         .logo_footer {
             @include flex-align-direction;
-            width: 100%;
+            width: $width-total;
             margin: 0;
         }
         .horarios-servicios {
-            width: 100%;
+            width: $width-total;
         }
         .sucursales-map-servicios {
-            width: 100%;
+            width: $width-total;
         }
     }
 }
@@ -223,16 +223,16 @@
         width: 80%;
     }
     .sucursales-map-servicios {
-        width: 100%;
+        width: $width-total;
     }
     .header {
-        height: 100%;
+        height: $heith-total;
     }
     .menu ul {
         width: 77%;
     }
     .imagen-index {
-        height: 100%;
+        height: $heith-total;
     }
     .seccion-centrada-index {
         font-size: small;
@@ -241,13 +241,13 @@
         width: 90%;
     }
     .mapa-1 {
-        width: 100%;
+        width: $width-total;
     }
     .mapa-2 {
-        width: 100%;
+        width: $width-total;
     }
     .mapa-3 {
-        width: 100%;
+        width: $width-total;
     }
     .mapa-1 iframe {
         width: 80%;
