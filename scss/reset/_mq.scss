@@ -4,8 +4,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
     
     .header{
-        height: 100%;
-        width: 100%;
+        @include w-h (100%, 100%);
         
         .logo-y-titulo img {
             width: 100%;
@@ -14,9 +13,7 @@
         .menu {
         
             ul {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flex-align-direction;
                 width: 100%;
             }
         }
@@ -61,9 +58,8 @@
         margin: 20px 0px;
         
         button {
-            width: 55px;
+            @include w-h (55px, 25px);
             font-size: xx-small;
-            height: 25px;
         }
     }
 
@@ -74,29 +70,25 @@
           
             #articulo-1 {
                 p {
-                    width: 90%;
-                    text-align: justify;
+                    @include w-ta (90%, justify);
                 }
             }
             #articulo-2 {
                 p {
-                    width: 90%;
-                    text-align: justify;
+                    @include w-ta (90%, justify);
                 }
             }
             #articulo-3 {
                 p {
-                    width: 90%;
-                    text-align: justify;
+                    @include w-ta (90%, justify);
                 }
             }
         }
         .video {
             
             iframe {
-            width: 95%;
-            margin: 18px 0px;
-            height: 224px;
+                @include w-h (95%, 224px);
+                margin: 18px 0px;
             }
         }
         .card-body p {
@@ -122,8 +114,7 @@
             
             ul {
                 padding: 0;
-                width: 100%;
-                text-align: center;
+                @include w-ta (100%, center);
                 
                 .button {
                     text-align: center;
@@ -166,25 +157,22 @@
         "mapa3";
 
         .mapa-1 {
-            width: 100%;
-            justify-content: center;
+            @include w-just (100%, center);
             
             iframe {
                 width: 80%;    
             }
         }
         .mapa-2 {
-            width: 100%;
-            justify-content: center;
+            @include w-just (100%, center);
 
             iframe {
                 width: 80%;    
             }
         }
         .mapa-3 {
-            width: 100%;
+            @include w-just (100%, center);
             margin-bottom: 30px;
-            justify-content: center;
 
             iframe {
                 width: 80%;    
@@ -203,10 +191,8 @@
         "sucursales";
 
         .logo_footer {
-            display: flex;
+            @include flex-align-direction;
             width: 100%;
-            flex-direction: column;
-            align-items: center;
             margin: 0;
         }
         .horarios-servicios {

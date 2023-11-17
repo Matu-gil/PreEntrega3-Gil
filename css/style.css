@@ -33,6 +33,7 @@
 
 .mi-bg {
   background-color: #a5ceff;
+  margin: 3% 0px;
 }
 
 .footer {
@@ -83,12 +84,12 @@
   border-radius: 40%;
 }
 .footer .redessociales {
-  grid-area: redes;
-  flex-direction: column;
-  width: 100px;
-  justify-self: center;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  grid-area: redes;
+  width: 100px;
+  justify-self: center;
   padding-top: 30px;
 }
 .footer .redessociales h4 {
@@ -146,9 +147,9 @@
 }
 .footer .horarios-servicios {
   grid-area: horarios;
+  display: flex;
   flex-direction: column;
   width: 100%;
-  display: flex;
   padding-top: 30px;
 }
 .footer .horarios-servicios .diasyhorarios-servicios {
@@ -158,21 +159,21 @@
 }
 .footer .horarios-servicios .horarios-de-atencion-servicios {
   display: flex;
+  justify-content: center;
   width: 100%;
   height: 8%;
-  justify-content: center;
 }
 .footer .sucursales-map-servicios {
   grid-area: sucursales;
   display: flex;
+  align-items: center;
   flex-direction: column;
   width: 100%;
-  align-items: center;
 }
 .footer .sucursales-map-servicios h5 {
   display: flex;
-  width: 100%;
   justify-content: center;
+  width: 100%;
   font-size: medium;
   text-align: center;
 }
@@ -185,12 +186,249 @@
   border: 0;
 }
 
+main {
+  background-color: #daf1ff;
+}
+
+h1 {
+  background-color: #9ce1fe;
+  font-family: "Croisant";
+  text-align: center;
+}
+
+/*MAIN - index*/
+.articulos-main #articulo-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.articulos-main #articulo-1 .imagen-index {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 350px;
+}
+.articulos-main #articulo-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.articulos-main #articulo-2 .imagen-index {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 350px;
+}
+.articulos-main #articulo-3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.articulos-main #articulo-3 .imagen-index {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 350px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+.video iframe {
+  display: flex;
+  width: 60%;
+  margin: 40px 0px;
+}
+
+.nuestras-marcas h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Croisant";
+}
+.nuestras-marcas h3 p {
+  display: inline-block;
+  font-size: x-large;
+}
+
+#marcas {
+  display: flex;
+  justify-content: center;
+  width: 99%;
+  margin: 1%;
+}
+#marcas button {
+  display: inline-block;
+  margin: 1%;
+  width: 167px;
+  height: 40px;
+}
+
+.padre-card {
+  display: flex;
+  justify-content: center;
+}
+.padre-card .card {
+  width: 18rem;
+  margin: 1%;
+}
+.padre-card .card a {
+  color: #9ce1fe;
+}
+
+.btn-primary {
+  font-family: "Bree";
+}
+
+/*INDEX - SERVICIOS*/
+.seccion-centrada {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.seccion-centrada p {
+  width: 70%;
+  text-align: center;
+}
+.seccion-centrada img {
+  width: 60%;
+}
+
+/*MAIN - Sucursales*/
+.seccion-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-area: seccion1;
+  width: 100%;
+  justify-content: center;
+}
+.seccion-1 p {
+  width: 215px;
+  text-align: center;
+}
+
+.seccion-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-area: seccion2;
+  width: 100%;
+  justify-content: center;
+}
+.seccion-2 p {
+  width: 215px;
+  text-align: center;
+}
+
+.seccion-3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-area: seccion3;
+  width: 100%;
+  justify-content: center;
+}
+.seccion-3 p {
+  width: 215px;
+  text-align: center;
+}
+
+.mapa-1 {
+  display: flex;
+  align-items: center;
+  grid-area: mapa1;
+  justify-content: flex-start;
+}
+
+.mapa-2 {
+  display: flex;
+  align-items: center;
+  grid-area: mapa2;
+  justify-content: flex-start;
+}
+
+.mapa-3 {
+  display: flex;
+  align-items: center;
+  grid-area: mapa3;
+  justify-content: flex-start;
+}
+
+/*MAIN - Contacto*/
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+.main-contacto .formulario {
+  width: 50%;
+  align-self: center;
+}
+.main-contacto .enviar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main-contacto .enviar button {
+  font-family: "Merriweather";
+  margin: 2% 0px;
+}
+
+/*MAIN - Lo que debes saber*/
+.encabezado {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#articulo-lo-que-debes-saber {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#articulo-lo-que-debes-saber .text-img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+#articulo-lo-que-debes-saber .text-img p {
+  width: 90%;
+  display: flex;
+  text-align: center;
+}
+#articulo-lo-que-debes-saber .text-img #imagen-1 {
+  width: 60%;
+}
+#articulo-lo-que-debes-saber .seccion-lqds {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  width: 80%;
+}
+#articulo-lo-que-debes-saber .imagen-2 {
+  width: 60%;
+}
+#articulo-lo-que-debes-saber .top-10 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+#articulo-lo-que-debes-saber .top-10 ol {
+  padding: 20px;
+}
+#articulo-lo-que-debes-saber .top-10 ol li img {
+  width: 50%;
+}
+
 /*Media Queries - Max width*/
 /*MOBILE*/
 @media (min-width: 320px) and (max-width: 480px) {
   .header {
-    height: 100%;
     width: 100%;
+    height: 100%;
   }
   .header .logo-y-titulo img {
     width: 100%;
@@ -198,8 +436,8 @@
   }
   .header .menu ul {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     width: 100%;
   }
   .header #menu-desplegable {
@@ -234,8 +472,8 @@
   }
   #marcas button {
     width: 55px;
-    font-size: xx-small;
     height: 25px;
+    font-size: xx-small;
   }
   .main-index {
     height: 100%;
@@ -254,8 +492,8 @@
   }
   .main-index .video iframe {
     width: 95%;
-    margin: 18px 0px;
     height: 224px;
+    margin: 18px 0px;
   }
   .main-index .card-body p {
     font-size: x-small;
@@ -316,8 +554,8 @@
   }
   .grid-conteiner .mapa-3 {
     width: 100%;
-    margin-bottom: 30px;
     justify-content: center;
+    margin-bottom: 30px;
   }
   .grid-conteiner .mapa-3 iframe {
     width: 80%;
@@ -330,9 +568,9 @@
   }
   .footer .logo_footer {
     display: flex;
-    width: 100%;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    width: 100%;
     margin: 0;
   }
   .footer .horarios-servicios {

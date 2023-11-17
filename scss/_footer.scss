@@ -10,8 +10,7 @@
     .logo_footer{
         grid-area: info;
         display: inline-block;
-        width: 300px;
-        height: 250px;
+        @include w-h (300px, 250px);
         margin: 1%;
         
         .logo {
@@ -35,26 +34,21 @@
                 color: rgb(69, 69, 69);
             }
             .ubicacion {
-                width: 40px;
-                border-radius: 50%;
+                @include w-b (40px, 50%);
             }
             .telefono {
-                width: 40px;
-                border-radius: 50%;
+                @include w-b (40px, 50%);
             }
             .mail {
-                width: 40px;
-                border-radius: 40%;
+                @include w-b (40px, 40%);
             }
         }
     }
     .redessociales {
+        @include flex-align-direction;
         grid-area: redes;
-        flex-direction: column;
         width: 100px;
         justify-self: center;
-        display: flex;
-        align-items: center;
         padding-top: 30px;
         
         h4 {
@@ -67,12 +61,10 @@
         }
 
         .redes {
-            display: flex;
-            flex-direction: column;
+            @include flex-direction;
             
             #facebook {
-                display: flex;
-                flex-direction: column;
+                @include flex-direction;
                 width: 60px;
                 border-radius: 50%;
                 margin: 10px 0px;
@@ -87,8 +79,7 @@
                 }
             }
             #instagram {
-                display: flex;
-                flex-direction: column;
+                @include flex-direction;
                 width: 60px;
                 border-radius: 50%;
                 margin: 10px 0px;
@@ -103,8 +94,7 @@
                 }
             }
             #telegram {
-                display: flex;
-                flex-direction: column;
+                @include flex-direction;
                 width: 60px;
                 border-radius: 50%;
                 margin: 10px 0px;
@@ -122,9 +112,8 @@
     }
     .horarios-servicios {
         grid-area: horarios;
-        flex-direction: column;
+        @include flex-direction;
         width: 100%;
-        display: flex;
         padding-top: 30px;
         
         .diasyhorarios-servicios {
@@ -134,23 +123,18 @@
         }
         
         .horarios-de-atencion-servicios {
-            display: flex;
-            width: 100%;
-            height: 8%;
-            justify-content: center;
+            @include flex-just;
+            @include w-h (100%, 8%)
         }
     }
     .sucursales-map-servicios {
         grid-area: sucursales;
-        display: flex;
-        flex-direction: column;
+        @include flex-align-direction;
         width: 100%;
-        align-items: center;
         
         h5 {
-            display: flex;
-            width: 100%;
-            justify-content: center; 
+            @include flex-just;
+            width: 100%; 
             font-size: medium;
             text-align: center;
         }
@@ -159,8 +143,7 @@
             margin: 20px 0px;
             
             iframe {
-                width: 100%;
-                height: 100%;
+                @include w-h (100%, 100%);
                 border: 0;
             }
         }

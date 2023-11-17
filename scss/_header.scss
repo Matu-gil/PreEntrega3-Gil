@@ -2,14 +2,12 @@
     background-image: url(../imagenes/preview.jpg);
     background-size:cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
+    @include flex-direction;
     height: 100%;
 }
 
 .logo-y-titulo {
-    display: flex;
-    justify-content: center;
+    @include flex-just;
     width: 100%;
     
     img {
@@ -20,6 +18,7 @@
 
 .mi-bg {
     background-color: #a5ceff;
+    margin: 3% 0px;
 }
 
 

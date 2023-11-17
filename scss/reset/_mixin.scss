@@ -1,0 +1,39 @@
+@mixin flex-direction {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin w-h ($w , $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin flex-align-items {
+    display: flex;
+    align-items: center;
+}
+@mixin flex-align-direction {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin flex-just {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin w-b ($w, $b) {
+    width: $w;
+    border-radius: $b;
+}
+
+@mixin w-ta ($w, $ta) {
+    width: $w;
+    text-align: $ta;
+}
+
+@mixin w-just ($w, $just) {
+    width: $w;
+    justify-content: $just;
+}

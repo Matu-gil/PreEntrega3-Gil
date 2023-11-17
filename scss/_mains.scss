@@ -1,0 +1,235 @@
+main {
+    background-color: #daf1ff;       
+}
+
+h1 {
+    background-color: #9ce1fe;
+    font-family: 'Croisant';    
+    text-align: center;
+}
+
+/*MAIN - index*/
+
+.articulos-main {
+
+    #articulo-1 {
+        @include flex-align-direction;
+        
+        .imagen-index {
+            @include flex-align-items;
+            @include w-h (80%, 350px);
+        }
+    }
+
+    #articulo-2 {
+        @include flex-align-direction;
+
+        .imagen-index {
+            @include flex-align-items;
+            @include w-h (80%, 350px);
+        }
+    }
+    #articulo-3 {
+        @include flex-align-direction;
+        
+        .imagen-index {
+            @include flex-align-items;
+            @include w-h (80%, 350px);
+        }
+    }
+}
+
+.video {
+    @include flex-just;
+
+    iframe {   
+        display: flex;
+        width: 60%;
+        margin: 40px 0px;
+    } 
+}
+
+.nuestras-marcas {
+
+    h3 {
+    @include flex-just;
+    font-family: 'Croisant';
+    
+        p {
+        display: inline-block;
+        font-size: x-large;
+        }
+    }
+}
+
+#marcas {
+    @include flex-just;
+    width: 99%;
+    margin: 1%;
+
+    button {
+    display: inline-block;
+    margin: 1%;
+    @include w-h (167px, 40px);
+    }
+}
+
+.padre-card {
+    @include flex-just;
+    
+    .card {
+    width: 18rem;
+    margin: 1%;
+
+        a{
+            color: #9ce1fe;
+        }
+    }
+}
+
+.btn-primary {
+    font-family: 'Bree';
+}
+
+/*INDEX - SERVICIOS*/
+
+.seccion-centrada {
+    @include flex-align-direction;
+    width: 100%;
+
+    p {
+    width: 70%;
+    text-align: center;
+    }
+
+    img {
+    width: 60%;
+    }
+}   
+
+/*MAIN - Sucursales*/
+
+.seccion-1 {
+    @include flex-align-direction;
+    grid-area: seccion1;
+    width: 100%;
+    justify-content: center;
+
+    p {
+    width: 215px;
+    text-align: center;
+    }
+}
+
+.seccion-2 {
+    @include flex-align-direction;
+    grid-area: seccion2;
+    width: 100%;
+    justify-content: center;
+
+    p {
+    width: 215px;
+    text-align: center;
+    }
+}
+
+.seccion-3 {
+    @include flex-align-direction;
+    grid-area: seccion3;
+    width: 100%;
+    justify-content: center;
+
+    p {
+    width: 215px;
+    text-align: center;
+    }
+}
+ 
+.mapa-1 {
+    @include flex-align-items;
+    grid-area: mapa1;
+    justify-content: flex-start;
+}
+.mapa-2 {
+    @include flex-align-items;
+    grid-area: mapa2;
+    justify-content: flex-start;
+}
+.mapa-3 {
+    @include flex-align-items;
+    grid-area: mapa3;
+    justify-content: flex-start;
+}
+
+/*MAIN - Contacto*/
+
+.main-contacto {
+    @include flex-direction;
+    margin-bottom: 2%;
+
+    .formulario {
+    width: 50%;
+    align-self: center;
+    }
+
+    .enviar {
+    @include flex-just;
+    width: 100%;
+
+        button {
+        font-family: 'Merriweather';
+        margin: 2% 0px;
+        }
+    }
+}
+
+/*MAIN - Lo que debes saber*/
+
+.encabezado {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#articulo-lo-que-debes-saber {
+    @include flex-align-direction;
+    
+    .text-img {
+    @include flex-align-direction;
+    width: 80%;
+
+        p {
+            width: 90%;
+            display: flex;
+            text-align: center;
+        }
+        #imagen-1 {
+            width: 60%;
+        }
+    }
+    .seccion-lqds {
+        @include flex-direction;
+        text-align: justify;
+        width: 80%;  
+    }
+
+    .imagen-2 {
+        width: 60%;
+    }
+    
+    .top-10 {
+    width: 80%;
+    @include flex-direction;
+    text-align: justify;
+
+        ol {
+            padding: 20px;
+           
+            li {
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+}
