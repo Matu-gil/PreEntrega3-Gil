@@ -23,7 +23,7 @@
 }
 
 .header {
-  background-image: url(../imagenes/preview.jpg);
+  background-image: url("../imagenes/preview.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -284,7 +284,7 @@ h1 {
 }
 
 .footer {
-  background-image: url(../imagenes/13844-NPB8WE.jpg);
+  background-image: url("../imagenes/13844-NPB8WE.jpg");
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -316,7 +316,7 @@ h1 {
   font-weight: 600;
   font-size: medium;
   font-family: "Bree";
-  color: rgb(69, 69, 69);
+  color: #454545;
 }
 .footer .logo_footer .datos-pagina .ubicacion {
   width: 40px;

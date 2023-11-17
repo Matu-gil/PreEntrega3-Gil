@@ -1,9 +1,9 @@
 main {
-    background-color: #daf1ff;       
+    background-color: $color-celeste;       
 }
 
 h1 {
-    background-color: #9ce1fe;
+    background-color: $celeste-oscuro;
     font-family: 'Croisant';    
     text-align: center;
 }
@@ -82,7 +82,7 @@ h1 {
     margin: 1%;
 
         a{
-            color: #9ce1fe;
+            color: $celeste-oscuro;
         }
     }
 }

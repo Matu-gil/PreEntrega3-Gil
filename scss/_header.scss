@@ -1,5 +1,5 @@
 .header {
-    background-image: url(../imagenes/preview.jpg);
+    background-image: $fondo-header;
     background-size:cover;
     background-position: center;
     @include flex-direction;
@@ -17,7 +17,7 @@
 }
 
 .mi-bg {
-    background-color: #a5ceff;
+    background-color: $celeste-navbar;
     margin: 3% 0px;
 }
 
