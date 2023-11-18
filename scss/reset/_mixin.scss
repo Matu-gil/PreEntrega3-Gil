@@ -37,3 +37,20 @@
     width: $w;
     justify-content: $just;
 }
+
+//Condicionales
+
+@mixin box-shadow ($boxshadow) {
+    @if $boxshadow == "s-rigth" {
+        box-shadow: $boxshadow-1;
+    }
+    @else if $boxshadow == "s-left" {
+        box-shadow: $boxshadow-2;
+    }
+    @else if $boxshadow == "ms-rigth" {
+        box-shadow: $boxshadow-3;
+        }
+    @else {
+        box-shadow: none;
+    } 
+}

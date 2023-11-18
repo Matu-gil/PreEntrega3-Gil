@@ -17,6 +17,7 @@
 }
 
 .mi-bg {
+    @include box-shadow (s-left);
     background-color: $celeste-navbar;
     margin: 3% 0px;
 }

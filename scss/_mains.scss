@@ -1,16 +1,19 @@
 main {
-    background-color: $color-celeste;       
+    background: rgb(95,228,255);
+    background: linear-gradient(90deg, rgba(95,228,255,1) 0%, rgba(188,188,215,0.768032212885154) 50%, rgba(95,228,255,1) 100%);
 }
 
 h1 {
     background-color: $celeste-oscuro;
     font-family: 'Croisant';    
     text-align: center;
+    @include box-shadow(ms-rigth);
 }
 
 /*MAIN - index*/
 
 .articulos-main {
+    margin-top: 3%;
 
     #articulo-1 {
         @include flex-align-direction;
@@ -42,7 +45,8 @@ h1 {
 .video {
     @include flex-just;
 
-    iframe {   
+    iframe { 
+        @include box-shadow (ms-rigth);  
         display: flex;
         width: 60%;
         margin: 40px 0px;
@@ -76,10 +80,11 @@ h1 {
 
 .padre-card {
     @include flex-just;
-    
+
     .card {
     width: 18rem;
     margin: 1%;
+    @include box-shadow(s-rigth);
 
         a{
             color: $celeste-oscuro;
@@ -96,14 +101,20 @@ h1 {
 .seccion-centrada {
     @include flex-align-direction;
     width: 100%;
+    
+    strong {
+        width: 70%;
+        text-align: justify;
+    }
 
     p {
     width: 70%;
-    text-align: center;
+    text-align: justify;
     }
 
     img {
-    width: 60%;
+        margin: 3% 0px;
+        width: 40%;
     }
 }   
 
@@ -195,7 +206,7 @@ h1 {
     
     .text-img {
     @include flex-align-direction;
-    width: 80%;
+    width: map-get($fontwidth-mood, dos);
 
         p {
             width: 90%;
@@ -203,17 +214,18 @@ h1 {
             text-align: center;
         }
         #imagen-1 {
-            width: 60%;
+            width: map-get($fontwidth-mood, tres);
+            margin: 3% 0px;
         }
     }
     .seccion-lqds {
         @include flex-direction;
         text-align: justify;
-        width: 80%;  
+        width: map-get($fontwidth-mood, dos);  
     }
 
-    .imagen-2 {
-        width: 60%;
+    #imagen-2 {
+        width: map-get($fontwidth-mood, tres);
     }
     
     .top-10 {

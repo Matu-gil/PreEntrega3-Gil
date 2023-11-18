@@ -55,7 +55,7 @@
             font-family: 'Croisant';
             width: 77%;
             margin: 1%;
-            text-align: center;
+            justify-content: center;
             display: flex;
             
         }
@@ -63,7 +63,7 @@
         .redes {
             @include flex-direction;
             
-            #facebook {
+            .facebook {
                 @include flex-direction;
                 width: 60px;
                 border-radius: 50%;
@@ -78,7 +78,7 @@
                     width: 80px;
                 }
             }
-            #instagram {
+            .instagram {
                 @include flex-direction;
                 width: 60px;
                 border-radius: 50%;
@@ -93,7 +93,7 @@
                     width: 80px;
                 }
             }
-            #telegram {
+            .telegram {
                 @include flex-direction;
                 width: 60px;
                 border-radius: 50%;
@@ -118,7 +118,7 @@
         
         .diasyhorarios-servicios {
             text-align: center;
-            font-family: 'Bree';
+            font-family: 'Croisant';
             font-size: large;
         }
         
@@ -143,6 +143,7 @@
             margin: 20px 0px;
             
             iframe {
+                @include box-shadow (ms-rigth);
                 @include w-h (100%, 100%);
                 border: 0;
             }
