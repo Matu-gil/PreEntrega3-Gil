@@ -206,26 +206,27 @@ h1 {
     
     .text-img {
     @include flex-align-direction;
-    width: map-get($fontwidth-mood, dos);
+    width: $width-total;
 
         p {
-            width: 90%;
+            width: 80%;
             display: flex;
             text-align: center;
+            justify-content: center;
         }
-        #imagen-1 {
-            width: map-get($fontwidth-mood, tres);
+        .imagen-1 {
+            width: 50%;
             margin: 3% 0px;
         }
     }
     .seccion-lqds {
         @include flex-direction;
         text-align: justify;
-        width: map-get($fontwidth-mood, dos);  
+        width: 80%;  
     }
 
-    #imagen-2 {
-        width: map-get($fontwidth-mood, tres);
+    .imagen-2 {
+        width: 50%;
     }
     
     .top-10 {

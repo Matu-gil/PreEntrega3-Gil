@@ -276,15 +276,16 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 }
 #articulo-lo-que-debes-saber .text-img p {
-  width: 90%;
+  width: 80%;
   display: flex;
   text-align: center;
+  justify-content: center;
 }
-#articulo-lo-que-debes-saber .text-img #imagen-1 {
-  width: 60%;
+#articulo-lo-que-debes-saber .text-img .imagen-1 {
+  width: 50%;
   margin: 3% 0px;
 }
 #articulo-lo-que-debes-saber .seccion-lqds {
@@ -293,8 +294,8 @@ h1 {
   text-align: justify;
   width: 80%;
 }
-#articulo-lo-que-debes-saber #imagen-2 {
-  width: 60%;
+#articulo-lo-que-debes-saber .imagen-2 {
+  width: 50%;
 }
 #articulo-lo-que-debes-saber .top-10 {
   width: 80%;
@@ -462,7 +463,7 @@ h1 {
 
 /*Media Queries - Max width*/
 /*MOBILE*/
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .header {
     width: 100%;
     height: 100%;
@@ -555,19 +556,19 @@ h1 {
   .main-contactos .formulario-contacto ul .button {
     text-align: center;
   }
-  #imagen-1 {
-    width: 80%;
-  }
-  #imagen-2 {
-    width: 80%;
-  }
-  #imagen-3 {
+  #articulo-lo-que-debes-saber .text-img .imagen-1 {
     width: 100%;
   }
-  .top-10 ol {
+  #articulo-lo-que-debes-saber .imagen-2 {
+    width: 100%;
+  }
+  #articulo-lo-que-debes-saber #imagen-3 {
+    width: 100%;
+  }
+  #articulo-lo-que-debes-saber .top-10 ol {
     padding: 17px;
   }
-  .top-10 ol li img {
+  #articulo-lo-que-debes-saber .top-10 ol li img {
     width: 100%;
   }
   .grid-conteiner {
@@ -624,51 +625,75 @@ h1 {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "info       redes" "horarios   sucursales";
   }
-  .logo_footer {
+  .footer .logo_footer {
     width: 150px;
+  }
+  .footer .sucursales-map-servicios {
+    width: 100%;
+  }
+  .footer .sucursales-map-servicios .map {
+    margin: 0;
+    width: 80%;
   }
   #marcas {
     margin: 0;
   }
-  .map {
-    margin: 0;
-    width: 80%;
-  }
-  .sucursales-map-servicios {
-    width: 100%;
-  }
   .header {
-    height: 100%;
-  }
-  .menu ul {
-    width: 77%;
-  }
-  .imagen-index {
     height: 100%;
   }
   .seccion-centrada-index {
     font-size: small;
   }
-  .seccion-centrada-index p {
+  .seccion-centrada-index #articulo-1 p {
     width: 90%;
   }
-  .mapa-1 {
+  .seccion-centrada-index #articulo-1 .imagen-index {
+    height: 250px;
+  }
+  .seccion-centrada-index #articulo-2 p {
+    width: 90%;
+  }
+  .seccion-centrada-index #articulo-2 .imagen-index {
+    height: 250px;
+  }
+  .seccion-centrada-index #articulo-3 p {
+    width: 90%;
+  }
+  .seccion-centrada-index #articulo-3 .imagen-index {
+    height: 250px;
+  }
+  .grid-conteiner .mapa-1 {
     width: 100%;
   }
-  .mapa-2 {
+  .grid-conteiner .mapa-1 iframe {
+    width: 80%;
+  }
+  .grid-conteiner .mapa-2 {
     width: 100%;
   }
-  .mapa-3 {
+  .grid-conteiner .mapa-2 iframe {
+    width: 80%;
+  }
+  .grid-conteiner .mapa-3 {
     width: 100%;
   }
-  .mapa-1 iframe {
+  .grid-conteiner .mapa-3 iframe {
     width: 80%;
   }
-  .mapa-2 iframe {
+  #articulo-lo-que-debes-saber .text-img .imagen-1 {
     width: 80%;
   }
-  .mapa-3 iframe {
+  #articulo-lo-que-debes-saber .imagen-2 {
     width: 80%;
+  }
+  #articulo-lo-que-debes-saber #imagen-3 {
+    width: 100%;
+  }
+  #articulo-lo-que-debes-saber .top-10 ol {
+    padding: 17px;
+  }
+  #articulo-lo-que-debes-saber .top-10 ol li img {
+    width: 100%;
   }
 }
 
