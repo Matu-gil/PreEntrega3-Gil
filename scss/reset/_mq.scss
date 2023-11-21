@@ -1,7 +1,7 @@
 /*Media Queries - Max width*/
 
 /*MOBILE*/
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
     
     .header{
         @include w-h (100%, 100%);
@@ -9,29 +9,6 @@
         .logo-y-titulo img {
             width: $width-total;
             margin: 0;
-        }
-        .menu {
-        
-            ul {
-                @include flex-align-direction;
-                width: $width-total;
-            }
-        }
-        #menu-desplegable {
-            width: $width-total;
-            margin: 0;
-        }
-        .buscador {
-            width: $width-total;
-            margin: 0;
-            justify-content: left;
-            
-            .buscar {
-                width: 285px;
-            }
-            .boton {
-                width: 35px;
-            }
         }
     }       
     .seccion-centrada-index {
@@ -47,7 +24,7 @@
     .seccion-centrada {
         
         p {
-        width: map-get($fontwidth-mood, uno);
+        width: map-get($width-mood, uno);
         text-align: justify;
         }
     }
@@ -91,9 +68,19 @@
                 margin: 18px 0px;
             }
         }
-        .card-body p {
-            font-size: x-small;
-        }
+        .padre-card {
+            width: $width-total;
+
+            .card {
+                width: 40%;
+
+                .card-body {
+                    p {
+                    font-size: x-small;
+                    }
+                }
+            }
+        }    
     }
     .main {
         height: $heith-total;
@@ -234,6 +221,19 @@
     #marcas {
         margin: 0;
     }
+    .padre-card {
+        width: $width-total;
+
+        .card {
+            width: 40%;
+
+            .card-body {
+                p {
+                font-size: small;
+                }
+            }
+        }
+    } 
     
     
     .header {
@@ -301,7 +301,7 @@
             }
         }
         .imagen-2 {
-            width: map-get($fontwidth-mood, dos);
+            width: map-get($width-mood, dos);
         }
         #imagen-3 {
             width: $width-total;

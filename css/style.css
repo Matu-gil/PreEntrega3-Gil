@@ -148,7 +148,7 @@ h1 {
   justify-content: center;
 }
 .padre-card .card {
-  width: 18rem;
+  width: 20%;
   margin: 1%;
   box-shadow: 5px 8px 8px 2px #454545;
 }
@@ -281,8 +281,8 @@ h1 {
 #articulo-lo-que-debes-saber .text-img p {
   width: 80%;
   display: flex;
-  text-align: center;
   justify-content: center;
+  text-align: center;
 }
 #articulo-lo-que-debes-saber .text-img .imagen-1 {
   width: 50%;
@@ -463,7 +463,7 @@ h1 {
 
 /*Media Queries - Max width*/
 /*MOBILE*/
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .header {
     width: 100%;
     height: 100%;
@@ -471,27 +471,6 @@ h1 {
   .header .logo-y-titulo img {
     width: 100%;
     margin: 0;
-  }
-  .header .menu ul {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-  }
-  .header #menu-desplegable {
-    width: 100%;
-    margin: 0;
-  }
-  .header .buscador {
-    width: 100%;
-    margin: 0;
-    justify-content: left;
-  }
-  .header .buscador .buscar {
-    width: 285px;
-  }
-  .header .buscador .boton {
-    width: 35px;
   }
   .seccion-centrada-index {
     display: grid;
@@ -533,7 +512,13 @@ h1 {
     height: 224px;
     margin: 18px 0px;
   }
-  .main-index .card-body p {
+  .main-index .padre-card {
+    width: 100%;
+  }
+  .main-index .padre-card .card {
+    width: 40%;
+  }
+  .main-index .padre-card .card .card-body p {
     font-size: x-small;
   }
   .main {
@@ -637,6 +622,15 @@ h1 {
   }
   #marcas {
     margin: 0;
+  }
+  .padre-card {
+    width: 100%;
+  }
+  .padre-card .card {
+    width: 40%;
+  }
+  .padre-card .card .card-body p {
+    font-size: small;
   }
   .header {
     height: 100%;

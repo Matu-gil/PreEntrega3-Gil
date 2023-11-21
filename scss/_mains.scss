@@ -7,7 +7,7 @@ h1 {
     background-color: $celeste-oscuro;
     font-family: 'Croisant';    
     text-align: center;
-    @include box-shadow(ms-rigth);
+    @include box-shadow(s-top);
 }
 
 /*MAIN - index*/
@@ -46,9 +46,9 @@ h1 {
     @include flex-just;
 
     iframe { 
-        @include box-shadow (ms-rigth);  
+        @include box-shadow (s-top);  
         display: flex;
-        width: 60%;
+        width: map-get($width-mood, tres);
         margin: 40px 0px;
     } 
 }
@@ -82,7 +82,7 @@ h1 {
     @include flex-just;
 
     .card {
-    width: 18rem;
+    width: 20%;
     margin: 1%;
     @include box-shadow(s-rigth);
 
@@ -100,7 +100,7 @@ h1 {
 
 .seccion-centrada {
     @include flex-align-direction;
-    width: 100%;
+    width: $width-total;
     
     strong {
         width: 70%;
@@ -123,7 +123,7 @@ h1 {
 .seccion-1 {
     @include flex-align-direction;
     grid-area: seccion1;
-    width: 100%;
+    width: $width-total;
     justify-content: center;
 
     p {
@@ -135,7 +135,7 @@ h1 {
 .seccion-2 {
     @include flex-align-direction;
     grid-area: seccion2;
-    width: 100%;
+    width: $width-total;
     justify-content: center;
 
     p {
@@ -147,7 +147,7 @@ h1 {
 .seccion-3 {
     @include flex-align-direction;
     grid-area: seccion3;
-    width: 100%;
+    width: $width-total;
     justify-content: center;
 
     p {
@@ -209,10 +209,9 @@ h1 {
     width: $width-total;
 
         p {
-            width: 80%;
-            display: flex;
+            width: map-get($width-mood, dos);
+            @include flex-just;
             text-align: center;
-            justify-content: center;
         }
         .imagen-1 {
             width: 50%;
@@ -222,7 +221,7 @@ h1 {
     .seccion-lqds {
         @include flex-direction;
         text-align: justify;
-        width: 80%;  
+        width: map-get($width-mood, dos);  
     }
 
     .imagen-2 {
@@ -230,9 +229,9 @@ h1 {
     }
     
     .top-10 {
-    width: 80%;
-    @include flex-direction;
-    text-align: justify;
+        width: map-get($width-mood, dos);
+        @include flex-direction;
+        text-align: justify;
 
         ol {
             padding: 20px;

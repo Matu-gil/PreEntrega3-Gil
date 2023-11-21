@@ -143,7 +143,7 @@
             margin: 20px 0px;
             
             iframe {
-                @include box-shadow (ms-rigth);
+                @include box-shadow (s-top);
                 @include w-h (100%, 100%);
                 border: 0;
             }

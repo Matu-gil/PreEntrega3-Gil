@@ -47,7 +47,7 @@
     @else if $boxshadow == "s-left" {
         box-shadow: $boxshadow-2;
     }
-    @else if $boxshadow == "ms-rigth" {
+    @else if $boxshadow == "s-top" {
         box-shadow: $boxshadow-3;
         }
     @else {

@@ -22,14 +22,14 @@ $boxshadow-1: 5px 8px 8px 2px $gris-topo;
 $boxshadow-2: 5px 8px 8px 2px $color-secundary;
 $boxshadow-3: 3px 2px 3px 3px $color-terciary;
 //variables maps
-$fontwidth-mood: (
+$width-mood: (
 //  mood        width
     uno:        90%,
     dos:        80%,
     tres:       60%,  
 );
 
-@each $mood, $width in $fontwidth-mood{
+@each $mood, $width in $width-mood{
     .width-varios#{$mood} {
         width: $width;
     } 
