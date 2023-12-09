@@ -14,7 +14,7 @@
     .seccion-centrada-index {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 473px);
         grid-template-areas: 
         "articulo1"  
         "articulo2"   
@@ -23,6 +23,9 @@
 
     .seccion-centrada {
         
+        img {
+            width: $width-total;
+        }
         p {
         width: map-get($width-mood, uno);
         text-align: justify;
@@ -41,23 +44,44 @@
     }
 
     .main-index {
-        height: $heith-total;
+        height: 136rem;
         
         .seccion-centrada-index {
           
             #articulo-1 {
+                
+                .imagen-index {
+                    height: auto;
+                }
                 p {
                     @include w-ta (90%, justify);
+                }
+                strong {
+                    width: 146px;
                 }
             }
             #articulo-2 {
+                
+                .imagen-index {
+                    height: auto;
+                }
                 p {
                     @include w-ta (90%, justify);
                 }
+                strong {
+                    width: 184px;
+                }
             }
             #articulo-3 {
+                
+                .imagen-index {
+                    height: auto;
+                }
                 p {
                     @include w-ta (90%, justify);
+                }
+                strong {
+                    width: 181px;
                 }
             }
         }
@@ -175,15 +199,38 @@
 
     }
     .footer {
-        height: 65em;
+        height: 56em;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 360px 190px 240px;
+        grid-template-rows: 253px 159px 179px 265px;
         grid-template-areas: 
         "info"  
         "redes" 
         "horarios" 
         "sucursales";
 
+        .redessociales {
+            height: 155px;
+
+            .redes-sociales {
+                font-size: medium;
+            }
+            .redes {
+                flex-direction: row;
+                width: $width-total;
+                justify-content: center;
+
+                .facebook {
+                    margin: 3%;
+                }
+                .instagram {
+                    margin: 3%;
+                    width: 26%;
+                }
+                .telegram {
+                    margin: 3%;
+                }
+            }
+        }
         .logo_footer {
             @include flex-align-direction;
             width: $width-total;
@@ -191,9 +238,24 @@
         }
         .horarios-servicios {
             width: $width-total;
+
+            .horarios-de-atencion-servicios {
+                font-size: medium;
+            }
+            .diasyhorarios-servicios {
+                font-size: medium;
+
+                h5 {
+                    font-size: small;
+                }
+            }
         }
         .sucursales-map-servicios {
             width: $width-total;
+
+            .sucursales-servicios {
+                font-size: medium;
+            }
         }
     }
 }

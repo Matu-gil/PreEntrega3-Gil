@@ -2,6 +2,7 @@
     background-image: $fondo-footer;
     background-size:cover;
     display: grid;
+    padding: 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 420px ;
     grid-template-areas: 
@@ -118,25 +119,31 @@
         
         .diasyhorarios-servicios {
             text-align: center;
-            font-family: 'Croisant';
-            font-size: large;
+            font-family: 'bree';
+            font-size: x-large;
+            margin-top: 40px;
         }
         
         .horarios-de-atencion-servicios {
+            font-family: 'Croisant';
+            font-size: x-large;
             @include flex-just;
             @include w-h (100%, 8%)
+            
         }
     }
     .sucursales-map-servicios {
         grid-area: sucursales;
         @include flex-align-direction;
         width: $width-total;
+        padding-top: 30px;
         
         h5 {
             @include flex-just;
             width: $width-total; 
-            font-size: medium;
+            font-size: x-large;
             text-align: center;
+            font-family: 'Croisant';            
         }
         
         .map {
