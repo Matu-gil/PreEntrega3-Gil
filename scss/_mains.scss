@@ -12,96 +12,96 @@ h1 {
 
 /*MAIN - index*/
 
-.articulos-main {
-    margin-top: 3%;
+.main-index {
+    height: 102em;
 
-    #articulo-1 {
-        @include flex-align-direction;
-        width: 80%;
-        justify-self: center;
-        text-align: justify;
-        .imagen-index {
-            @include flex-align-items;
-            @include w-h (80%, 350px);
+    .articulos-main {
+        margin-top: 3%;
+
+        #articulo-1 {
+            @include flex-align-direction;
+            width: 80%;
+            justify-self: center;
+            text-align: justify;
+            .imagen-index {
+                @include flex-align-items;
+                @include w-h (80%, 270px);
+            }
+            
         }
+
+        #articulo-2 {
+            @include flex-align-direction;
+            width: 80%;
+            justify-self: center;
+            text-align: justify;
+            .imagen-index {
+                @include flex-align-items;
+                @include w-h (80%, 270px);
+            }
+        }
+        #articulo-3 {
+            @include flex-align-direction;
+            width: 80%;
+            justify-self: center;
+            text-align: justify;
+            .imagen-index {
+                @include flex-align-items;
+                @include w-h (80%, 270px);
+            }
+        }
+    }
+    .video {
+        @include flex-just;
+
+        iframe { 
+            @include box-shadow (s-top);  
+            display: flex;
+            width: map-get($width-mood, tres);
+            margin: 40px 0px;
+        } 
+    }
+    .nuestras-marcas {
+
+        h3 {
+        @include flex-just;
+        font-family: 'Croisant';
         
-    }
-
-    #articulo-2 {
-        @include flex-align-direction;
-        width: 80%;
-        justify-self: center;
-        text-align: justify;
-        .imagen-index {
-            @include flex-align-items;
-            @include w-h (80%, 350px);
+            p {
+            display: inline-block;
+            font-size: x-large;
+            }
         }
     }
-    #articulo-3 {
-        @include flex-align-direction;
-        width: 80%;
-        justify-self: center;
-        text-align: justify;
-        .imagen-index {
-            @include flex-align-items;
-            @include w-h (80%, 350px);
+    .marcas {
+        
+        #marcas {
+            @include flex-just;
+            width: 99%;
+            margin: 1%;
+
+            button {
+            display: inline-block;
+            margin: 1%;
+            @include w-h (167px, 40px);
+            }
         }
     }
-}
+    .padre-card {
+        @include flex-just;
 
-.video {
-    @include flex-just;
+        .card {
+        width: 30%;
+        margin: 1%;
+        @include box-shadow(s-rigth);
 
-    iframe { 
-        @include box-shadow (s-top);  
-        display: flex;
-        width: map-get($width-mood, tres);
-        margin: 40px 0px;
-    } 
-}
-
-.nuestras-marcas {
-
-    h3 {
-    @include flex-just;
-    font-family: 'Croisant';
-    
-        p {
-        display: inline-block;
-        font-size: x-large;
-        }
-    }
-}
-
-#marcas {
-    @include flex-just;
-    width: 99%;
-    margin: 1%;
-
-    button {
-    display: inline-block;
-    margin: 1%;
-    @include w-h (167px, 40px);
-    }
-}
-
-.padre-card {
-    @include flex-just;
-
-    .card {
-    width: 20%;
-    margin: 1%;
-    @include box-shadow(s-rigth);
-
-        a{
+            .btn-primary {
+            font-family: 'Bree';
             color: $celeste-oscuro;
+            }
         }
     }
-}
-
-.btn-primary {
-    font-family: 'Bree';
-}
+}    
 
 /*INDEX - SERVICIOS*/
 

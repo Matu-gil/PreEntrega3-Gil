@@ -72,10 +72,13 @@ h1 {
 }
 
 /*MAIN - index*/
-.articulos-main {
+.main-index {
+  height: 102em;
+}
+.main-index .articulos-main {
   margin-top: 3%;
 }
-.articulos-main #articulo-1 {
+.main-index .articulos-main #articulo-1 {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -83,27 +86,13 @@ h1 {
   justify-self: center;
   text-align: justify;
 }
-.articulos-main #articulo-1 .imagen-index {
+.main-index .articulos-main #articulo-1 .imagen-index {
   display: flex;
   align-items: center;
   width: 80%;
-  height: 350px;
+  height: 270px;
 }
-.articulos-main #articulo-2 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 80%;
-  justify-self: center;
-  text-align: justify;
-}
-.articulos-main #articulo-2 .imagen-index {
-  display: flex;
-  align-items: center;
-  width: 80%;
-  height: 350px;
-}
-.articulos-main #articulo-3 {
+.main-index .articulos-main #articulo-2 {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -111,62 +100,69 @@ h1 {
   justify-self: center;
   text-align: justify;
 }
-.articulos-main #articulo-3 .imagen-index {
+.main-index .articulos-main #articulo-2 .imagen-index {
   display: flex;
   align-items: center;
   width: 80%;
-  height: 350px;
+  height: 270px;
 }
-
-.video {
+.main-index .articulos-main #articulo-3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  justify-self: center;
+  text-align: justify;
+}
+.main-index .articulos-main #articulo-3 .imagen-index {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 270px;
+}
+.main-index .video {
   display: flex;
   justify-content: center;
 }
-.video iframe {
+.main-index .video iframe {
   box-shadow: 3px 2px 3px 3px #808080;
   display: flex;
   width: 60%;
   margin: 40px 0px;
 }
-
-.nuestras-marcas h3 {
+.main-index .nuestras-marcas h3 {
   display: flex;
   justify-content: center;
   font-family: "Croisant";
 }
-.nuestras-marcas h3 p {
+.main-index .nuestras-marcas h3 p {
   display: inline-block;
   font-size: x-large;
 }
-
-#marcas {
+.main-index .marcas #marcas {
   display: flex;
   justify-content: center;
   width: 99%;
   margin: 1%;
 }
-#marcas button {
+.main-index .marcas #marcas button {
   display: inline-block;
   margin: 1%;
   width: 167px;
   height: 40px;
 }
-
-.padre-card {
+.main-index .padre-card {
   display: flex;
   justify-content: center;
 }
-.padre-card .card {
-  width: 20%;
+.main-index .padre-card .card {
+  width: 30%;
   margin: 1%;
   box-shadow: 5px 8px 8px 2px #454545;
 }
-.padre-card .card a {
-  color: #9ce1fe;
-}
-
-.btn-primary {
+.main-index .padre-card .card .btn-primary {
   font-family: "Bree";
+  color: #9ce1fe;
 }
 
 /*INDEX - SERVICIOS*/
@@ -322,7 +318,8 @@ h1 {
   background-image: url("../imagenes/13844-NPB8WE.jpg");
   background-size: cover;
   display: grid;
-  padding: 30px;
+  height: 27em;
+  padding: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 420px;
   grid-template-areas: "info  redes horarios sucursales";
@@ -377,7 +374,7 @@ h1 {
 }
 .footer .redessociales h4 {
   font-family: "Croisant";
-  width: 77%;
+  width: 91%;
   margin: 1%;
   justify-content: center;
   display: flex;
@@ -438,10 +435,11 @@ h1 {
 .footer .horarios-servicios .diasyhorarios-servicios {
   text-align: center;
   font-family: "bree";
-  font-size: x-large;
+  font-size: large;
   margin-top: 40px;
 }
 .footer .horarios-servicios .horarios-de-atencion-servicios {
+  text-align: center;
   font-family: "Croisant";
   font-size: x-large;
   display: flex;
@@ -489,7 +487,7 @@ h1 {
   .seccion-centrada-index {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 473px);
+    grid-template-rows: repeat(3, 439px);
     grid-template-areas: "articulo1" "articulo2" "articulo3";
   }
   .seccion-centrada img {
@@ -512,6 +510,9 @@ h1 {
   .main-index {
     height: 136rem;
   }
+  .main-index .seccion-centrada-index {
+    height: 60%;
+  }
   .main-index .seccion-centrada-index #articulo-1 .imagen-index {
     height: auto;
   }
@@ -532,8 +533,8 @@ h1 {
   .main-index .seccion-centrada-index #articulo-2 strong {
     width: 184px;
   }
-  .main-index .seccion-centrada-index #articulo-3 .imagen-index {
-    height: auto;
+  .main-index .seccion-centrada-index #articulo-3 {
+    height: 373px;
   }
   .main-index .seccion-centrada-index #articulo-3 p {
     width: 90%;
@@ -542,10 +543,16 @@ h1 {
   .main-index .seccion-centrada-index #articulo-3 strong {
     width: 181px;
   }
+  .main-index .video {
+    margin: 20px 0px;
+  }
   .main-index .video iframe {
     width: 95%;
     height: 224px;
     margin: 18px 0px;
+  }
+  .main-index .marcas {
+    margin: 20px 0px;
   }
   .main-index .padre-card {
     width: 100%;
@@ -629,21 +636,41 @@ h1 {
   }
   .footer .redessociales .redes-sociales {
     font-size: medium;
+    text-decoration-line: underline;
   }
   .footer .redessociales .redes {
     flex-direction: row;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
   }
   .footer .redessociales .redes .facebook {
     margin: 3%;
+    width: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .footer .redessociales .redes .facebook a {
+    text-decoration-line: none;
+    color: #3a589b;
   }
   .footer .redessociales .redes .instagram {
     margin: 3%;
-    width: 26%;
+    width: auto;
+    align-items: center;
+  }
+  .footer .redessociales .redes .instagram a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: none;
+    color: rgba(244, 67, 54, 0.7607843137);
   }
   .footer .redessociales .redes .telegram {
     margin: 3%;
+  }
+  .footer .redessociales .redes .telegram a {
+    text-decoration-line: none;
+    color: #0d6ea3;
   }
   .footer .logo_footer {
     display: flex;
@@ -674,15 +701,41 @@ h1 {
 /*TABLET*/
 @media (min-width: 481px) and (max-width: 768px) {
   .footer {
+    height: 39em;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 256px;
     grid-template-areas: "info       redes" "horarios   sucursales";
+  }
+  .footer .redessociales {
+    justify-content: center;
+  }
+  .footer .redessociales .redes-sociales {
+    font-size: medium;
+    width: 135px;
+    text-decoration-line: underline;
   }
   .footer .logo_footer {
     width: 150px;
   }
+  .footer .horarios-servicios {
+    justify-content: center;
+    align-self: baseline;
+  }
+  .footer .horarios-servicios .horarios-de-atencion-servicios {
+    font-size: medium;
+    text-decoration-line: underline;
+  }
+  .footer .horarios-servicios .diasyhorarios-servicios {
+    font-size: medium;
+    margin: 10px 0px;
+  }
   .footer .sucursales-map-servicios {
     width: 100%;
+    font-size: medium;
+  }
+  .footer .sucursales-map-servicios .sucursales-servicios {
+    font-size: medium;
+    color: #000000;
   }
   .footer .sucursales-map-servicios .map {
     margin: 0;
@@ -703,26 +756,47 @@ h1 {
   .header {
     height: 100%;
   }
-  .seccion-centrada-index {
+  .main-index {
+    height: 91em;
+  }
+  .main-index .seccion-centrada-index {
     font-size: small;
   }
-  .seccion-centrada-index #articulo-1 p {
+  .main-index .seccion-centrada-index #articulo-1 strong {
+    width: 119px;
+    text-align: -webkit-center;
+  }
+  .main-index .seccion-centrada-index #articulo-1 p {
     width: 90%;
   }
-  .seccion-centrada-index #articulo-1 .imagen-index {
-    height: 250px;
+  .main-index .seccion-centrada-index #articulo-1 .imagen-index {
+    height: 160px;
   }
-  .seccion-centrada-index #articulo-2 p {
+  .main-index .seccion-centrada-index #articulo-2 strong {
+    width: 149px;
+    text-align: -webkit-center;
+  }
+  .main-index .seccion-centrada-index #articulo-2 p {
     width: 90%;
   }
-  .seccion-centrada-index #articulo-2 .imagen-index {
-    height: 250px;
+  .main-index .seccion-centrada-index #articulo-2 .imagen-index {
+    height: 160px;
   }
-  .seccion-centrada-index #articulo-3 p {
+  .main-index .seccion-centrada-index #articulo-3 strong {
+    width: 147px;
+    text-align: -webkit-center;
+  }
+  .main-index .seccion-centrada-index #articulo-3 p {
     width: 90%;
   }
-  .seccion-centrada-index #articulo-3 .imagen-index {
-    height: 250px;
+  .main-index .seccion-centrada-index #articulo-3 .imagen-index {
+    height: 160px;
+  }
+  .main-index .video iframe {
+    width: 90%;
+  }
+  .main-index .marcas {
+    margin: 2% 0px;
   }
   .grid-conteiner .mapa-1 {
     width: 100%;

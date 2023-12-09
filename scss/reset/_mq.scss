@@ -14,7 +14,7 @@
     .seccion-centrada-index {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 473px);
+        grid-template-rows: repeat(3, 439px);
         grid-template-areas: 
         "articulo1"  
         "articulo2"   
@@ -47,7 +47,8 @@
         height: 136rem;
         
         .seccion-centrada-index {
-          
+            height: 60%;
+
             #articulo-1 {
                 
                 .imagen-index {
@@ -73,10 +74,8 @@
                 }
             }
             #articulo-3 {
-                
-                .imagen-index {
-                    height: auto;
-                }
+                height: 373px;
+
                 p {
                     @include w-ta (90%, justify);
                 }
@@ -86,11 +85,14 @@
             }
         }
         .video {
-            
+            margin: 20px 0px;
             iframe {
                 @include w-h (95%, 224px);
                 margin: 18px 0px;
             }
+        }
+        .marcas {
+            margin: 20px 0px;
         }
         .padre-card {
             width: $width-total;
@@ -213,21 +215,41 @@
 
             .redes-sociales {
                 font-size: medium;
+                text-decoration-line: underline;
             }
             .redes {
                 flex-direction: row;
                 width: $width-total;
-                justify-content: center;
+                justify-content: space-around;
 
                 .facebook {
                     margin: 3%;
+                    width: auto;
+                    align-items: center;
+                    text-align: center;
+                    a {
+                        text-decoration-line: none;
+                        color: #3a589b;
+                    }
                 }
                 .instagram {
                     margin: 3%;
-                    width: 26%;
+                    width: auto;
+                    align-items: center;
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration-line: none;
+                        color: #f44336c2;
+                    }
                 }
                 .telegram {
                     margin: 3%;
+                    a {
+                        text-decoration-line: none;
+                        color: #0d6ea3;
+                    }
                 }
             }
         }
@@ -262,18 +284,46 @@
 /*TABLET*/
 @media   (min-width: 481px) and (max-width: 768px) {
     .footer {
+        height: 39em;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 256px;
         grid-template-areas: 
           "info       redes" 
         "horarios   sucursales";
-    
+        
+        .redessociales {
+            justify-content: center;
+
+            .redes-sociales {
+                font-size: medium;
+                width: 135px;
+                text-decoration-line: underline;
+            }
+        }
         .logo_footer {
             width: 150px;
         }
+        .horarios-servicios {
+            justify-content: center;
+            align-self: baseline;
+
+            .horarios-de-atencion-servicios {
+                font-size: medium;
+                text-decoration-line: underline;
+            }
+            .diasyhorarios-servicios {
+                font-size: medium;
+                margin: 10px 0px;
+            }
+        }
         .sucursales-map-servicios {
             width: $width-total;
-            
+            font-size: medium;
+
+            .sucursales-servicios {
+                font-size: medium;
+                color: $color-primary;
+            }
             .map{
                 margin: 0;
                 width: 80%;
@@ -301,35 +351,60 @@
     .header {
         height: $heith-total;
     }
-    .seccion-centrada-index {
-        font-size: small;
+    .main-index {
+        height: 91em; 
 
-        #articulo-1 {
-            p {
+        .seccion-centrada-index {
+            font-size: small;
+
+            #articulo-1 {
+                strong {
+                    width: 119px;
+                    text-align: -webkit-center;
+                }
+                p {
+                    width: 90%;
+                }
+                .imagen-index {
+                    height: 160px;
+                }
+            }
+            #articulo-2 {
+                strong {
+                    width: 149px;
+                    text-align: -webkit-center;
+                }
+                p {
+                    width: 90%;
+                }
+                .imagen-index {
+                    height: 160px;
+                }
+            }
+            #articulo-3 {
+                
+                strong {
+                    width: 147px;
+                    text-align: -webkit-center;
+                }
+                p {
+                    width: 90%;
+                }
+                .imagen-index {
+                    height: 160px;
+                }
+            }
+            
+        }
+        .video {
+            iframe {
                 width: 90%;
             }
-            .imagen-index {
-                height: 250px;
-            }
         }
-        #articulo-2 {
-            p {
-                width: 90%;
-            }
-            .imagen-index {
-                height: 250px;
-            }
+        .marcas {
+            margin: 2% 0px;
         }
-        #articulo-3 {
-            p {
-                width: 90%;
-            }
-            .imagen-index {
-                height: 250px;
-            }
-        }
-        
-    }
+    }    
     .grid-conteiner {
         
         .mapa-1 {

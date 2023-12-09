@@ -2,7 +2,8 @@
     background-image: $fondo-footer;
     background-size:cover;
     display: grid;
-    padding: 30px;
+    height: 27em;
+    padding: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 420px ;
     grid-template-areas: 
@@ -54,7 +55,7 @@
         
         h4 {
             font-family: 'Croisant';
-            width: 77%;
+            width: 91%;
             margin: 1%;
             justify-content: center;
             display: flex;
@@ -120,11 +121,12 @@
         .diasyhorarios-servicios {
             text-align: center;
             font-family: 'bree';
-            font-size: x-large;
+            font-size: large;
             margin-top: 40px;
         }
         
         .horarios-de-atencion-servicios {
+            text-align: center;
             font-family: 'Croisant';
             font-size: x-large;
             @include flex-just;
