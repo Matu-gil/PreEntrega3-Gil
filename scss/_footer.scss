@@ -2,10 +2,10 @@
     background-image: $fondo-footer;
     background-size:cover;
     display: grid;
-    height: 27em;
+    height: 19em;
     padding: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 420px ;
+    grid-template-rows: 294px ;
     grid-template-areas: 
     "info  redes horarios sucursales";
 
@@ -54,6 +54,7 @@
         padding-top: 30px;
         
         h4 {
+            text-decoration-line: underline;
             font-family: 'Croisant';
             width: 91%;
             margin: 1%;
@@ -63,8 +64,11 @@
         }
 
         .redes {
-            @include flex-direction;
-            
+            //@include flex-direction;
+            display: flex;
+            justify-content: space-around;
+            width: $width-total;
+            margin: 7% 0px;
             .facebook {
                 @include flex-direction;
                 width: 60px;
@@ -126,6 +130,7 @@
         }
         
         .horarios-de-atencion-servicios {
+            text-decoration-line: underline;
             text-align: center;
             font-family: 'Croisant';
             font-size: x-large;

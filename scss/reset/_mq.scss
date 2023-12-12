@@ -330,22 +330,7 @@
             }
         }
     }
-    #marcas {
-        margin: 0;
-    }
-    .padre-card {
-        width: $width-total;
-
-        .card {
-            width: 40%;
-
-            .card-body {
-                p {
-                font-size: small;
-                }
-            }
-        }
-    } 
+     
     
     
     .header {
@@ -353,7 +338,26 @@
     }
     .main-index {
         height: 91em; 
+        .marcas {
+            margin: 2% 0px;
+            
+            #marcas {
+                margin: 0;
+            }
+        }    
+        .padre-card {
+            width: $width-total;
 
+            .card {
+                width: 40%;
+
+                .card-body {
+                     p {
+                    font-size: small;
+                    }
+                }
+            }
+        }
         .seccion-centrada-index {
             font-size: small;
 
@@ -400,9 +404,6 @@
             iframe {
                 width: 90%;
             }
-        }
-        .marcas {
-            margin: 2% 0px;
         }
     }    
     .grid-conteiner {

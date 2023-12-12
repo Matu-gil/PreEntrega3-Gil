@@ -318,10 +318,10 @@ h1 {
   background-image: url("../imagenes/13844-NPB8WE.jpg");
   background-size: cover;
   display: grid;
-  height: 27em;
+  height: 19em;
   padding: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 420px;
+  grid-template-rows: 294px;
   grid-template-areas: "info  redes horarios sucursales";
 }
 .footer .logo_footer {
@@ -373,6 +373,7 @@ h1 {
   padding-top: 30px;
 }
 .footer .redessociales h4 {
+  text-decoration-line: underline;
   font-family: "Croisant";
   width: 91%;
   margin: 1%;
@@ -381,7 +382,9 @@ h1 {
 }
 .footer .redessociales .redes {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  margin: 7% 0px;
 }
 .footer .redessociales .redes .facebook {
   display: flex;
@@ -439,6 +442,7 @@ h1 {
   margin-top: 40px;
 }
 .footer .horarios-servicios .horarios-de-atencion-servicios {
+  text-decoration-line: underline;
   text-align: center;
   font-family: "Croisant";
   font-size: x-large;
@@ -741,23 +745,26 @@ h1 {
     margin: 0;
     width: 80%;
   }
-  #marcas {
-    margin: 0;
-  }
-  .padre-card {
-    width: 100%;
-  }
-  .padre-card .card {
-    width: 40%;
-  }
-  .padre-card .card .card-body p {
-    font-size: small;
-  }
   .header {
     height: 100%;
   }
   .main-index {
     height: 91em;
+  }
+  .main-index .marcas {
+    margin: 2% 0px;
+  }
+  .main-index .marcas #marcas {
+    margin: 0;
+  }
+  .main-index .padre-card {
+    width: 100%;
+  }
+  .main-index .padre-card .card {
+    width: 40%;
+  }
+  .main-index .padre-card .card .card-body p {
+    font-size: small;
   }
   .main-index .seccion-centrada-index {
     font-size: small;
@@ -794,9 +801,6 @@ h1 {
   }
   .main-index .video iframe {
     width: 90%;
-  }
-  .main-index .marcas {
-    margin: 2% 0px;
   }
   .grid-conteiner .mapa-1 {
     width: 100%;
